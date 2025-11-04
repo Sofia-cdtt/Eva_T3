@@ -6,7 +6,49 @@ namespace T3_PRÁCTICA
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Mi nombre es Monica Sofia Candiotti Simeon. ");
+            string continuar;
+            Librería e = new Librería();
+            
+            
+            do 
+            {
+                Console.Clear();
+                Console.WriteLine("BIENVENIDOS AL SISTEMA DE REGISTROS DE LIBROS");
+                Console.WriteLine("****           Menú de opciones:         ****\n");
+                Console.WriteLine(" 1. Registrar ");
+                Console.WriteLine(" 2. Mostrar ");
+                Console.WriteLine(" 3. Modificar ");
+                Console.WriteLine(" 4. Eliminar ");
+                Console.WriteLine(" 0. Salir\n ");
+
+                int opc;
+
+                while (true) 
+                {
+                    Console.Write("Ingrese una opción: ");
+                    if (int.TryParse(Console.ReadLine(), out opc) & opc >= 0 && opc <= 4) break;
+                    else Console.WriteLine("¡Ingrese una opción correcta\n!");
+                }
+
+                switch (opc) 
+                {
+                    case 0: return;
+                    case 1: break;
+                    case 2: break;
+                    case 3: break;
+                    case 4: break;
+                }
+
+                while (true) 
+                {
+                    Console.Write("¿Desea continuar? [S/N] : ");
+                    continuar = Console.ReadLine().ToUpper();
+                    if (continuar == "S" || continuar == "N") break;
+                    else Console.WriteLine("ERROR. Ingrese solo 's' o 'n'.\n");
+                }
+                Console.WriteLine("\nGracias por utilizar el sistema. ");
+
+            } while (continuar == "S");
         }
     }
 }
