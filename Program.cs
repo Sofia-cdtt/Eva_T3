@@ -32,11 +32,11 @@ namespace T3_PRÁCTICA
 
                 switch (opc) 
                 {
-                    case 0: return;
-                    case 1: break;
-                    case 2: break;
-                    case 3: break;
-                    case 4: break;
+                    case 0:  return;
+                    case 1: e.Registrar(); break;
+                    case 2: e.Mostrar(); break;
+                    case 3: e.Modificar(); break;
+                    case 4: e.Eliminar(); break;
                 }
 
                 while (true) 
