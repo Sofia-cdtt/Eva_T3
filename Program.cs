@@ -13,8 +13,10 @@ namespace T3_PRÁCTICA
             do 
             {
                 Console.Clear();
-                Console.WriteLine("BIENVENIDOS AL SISTEMA DE REGISTROS DE LIBROS");
-                Console.WriteLine("****           Menú de opciones:         ****\n");
+                Console.WriteLine("*-----------------------------------------------*");
+                Console.WriteLine("| BIENVENIDOS AL SISTEMA DE REGISTROS DE LIBROS |");
+                Console.WriteLine("*-----------------------------------------------*");
+                Console.WriteLine("****             Menú de opciones:           ****\n");
                 Console.WriteLine(" 1. Registrar ");
                 Console.WriteLine(" 2. Mostrar ");
                 Console.WriteLine(" 3. Modificar ");
@@ -41,7 +43,7 @@ namespace T3_PRÁCTICA
 
                 while (true) 
                 {
-                    Console.Write("¿Desea continuar? [S/N] : ");
+                    Console.Write("\n¿Desea continuar? [S/N] : ");
                     continuar = Console.ReadLine().ToUpper();
                     if (continuar == "S" || continuar == "N") break;
                     else Console.WriteLine("ERROR. Ingrese solo 's' o 'n'.\n");
